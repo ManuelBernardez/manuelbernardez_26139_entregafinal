@@ -1,6 +1,6 @@
 # Ecommerce
 
-Sistema backend de ecommerce desarrollado con Spring Boot y persistencia en MySQL, gestiona productos aplicando reglas de negocio. Realizado en el marco del curso Backend Java, Talento Tech.
+Sistema backend desarrollado con Spring Boot y persistencia en MySQL, gestiona productos aplicando reglas de negocio. Realizado en el marco del curso Backend Java, Talento Tech.
 
 Este proyecto está construido de forma incremental para simular un sistema real de ecommerce: desde un CRUD básico hasta una arquitectura full stack moderna con autenticación, carrito y sistema de pedidos.
 
