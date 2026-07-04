@@ -19,13 +19,14 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 80)
+    @Column(nullable = false, length = 100)
     private String nombre;
 
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal precio;
 
-    private String imagen;
+    @Column(length = 255)
+    private String descripcion;
 
     @Column(nullable = false)
     private Integer stock;
@@ -35,15 +36,15 @@ public class Producto {
 
     @CreationTimestamp
     @Column(updatable = false)
-    private LocalDateTime createdAt;
+    private LocalDateTime fecha_creacion;
 
     @UpdateTimestamp
-    private LocalDateTime updatedAt;
+    private LocalDateTime fecha_actualizacion;
 
-    public Producto(String nombre, BigDecimal precio, String imagen, Integer stock) {
+    public Producto(String nombre, BigDecimal precio, String descripcion, Integer stock) {
         this.nombre = nombre;
         this.precio = precio;
-        this.imagen = imagen;
+        this.descripcion = descripcion;
         this.stock = stock;
         this.activo = true;
     }

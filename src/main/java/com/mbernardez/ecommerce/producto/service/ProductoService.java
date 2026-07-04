@@ -42,7 +42,7 @@ public class ProductoService implements IProductoService {
 
         existing.setNombre(producto.getNombre());
         existing.setPrecio(producto.getPrecio());
-        existing.setImagen(producto.getImagen());
+        existing.setDescripcion(producto.getDescripcion());
         existing.setStock(producto.getStock());
 
         return productoRepository.save(existing);
