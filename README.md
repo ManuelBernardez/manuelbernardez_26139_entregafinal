@@ -27,8 +27,8 @@ Este proyecto está construido de forma incremental para simular un sistema real
 
 |   Categoría   |     Tecnología    |
 |---------------|-------------------|
-| Lenguaje      | Java 21           |
-| Base de datos | MySQL 8           |
+| Lenguaje      | Java 17+          |
+| Base de datos | MySQL 8+          |
 | Framework     | Spring Boot 3.5   |
 | Persistencia  | Spring Data JPA   |
 | Validaciones  | Bean Validation   |
@@ -52,13 +52,12 @@ com.mbernardez.ecommerce
 ├── EcommerceApplication.java
 ```
 
+## Base de Datos
+
+Podes encontrar el script `ecommerce_db.sql` para crearla y el diagrama ER en: `docs/database`
+- Visualización interactiva del ERD en: https://dbdocs.io/manuelbernardezm/ecommerce_db?view=relationships
+
 ## ⚙️ Cómo ejecutar el proyecto
-
-### Requisitos previos
-
-- Java 17+
-- MySQL 8+
-- Maven 3.8+
 
 ### Configuración
 
@@ -70,7 +69,7 @@ com.mbernardez.ecommerce
    spring.datasource.url= DB_URL
    spring.datasource.username= DB_USERNAME
    spring.datasource.password= DB_PASSWORD
-   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.hibernate.ddl-auto=validate
    ```
 3. Ejecutar:
    ```bash
